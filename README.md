@@ -59,3 +59,22 @@ MONGO_URI=mongodb://localhost:27017/chatapp
 
 uvicorn main:app --reload
 
+
+### Frontend Setup
+
+Navigate into the frontend folder:
+
+cd ../frontend
+
+Install frontend dependencies:
+
+npm install
+
+
+Start the React app:
+
+npm start
+
+
+
+
