@@ -1,7 +1,7 @@
 # Real-Time Chat Application
 
 I developed this real-time chat app using FastAPI, WebSockets, MongoDB, and React. Users can chat instantly in real-time, and every message is stored in MongoDB for persistence.
-A
+
 ---
 
 ## ✅ Features
