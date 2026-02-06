@@ -1,12 +1,19 @@
+from app.database.mongo import messages_collection
 from datetime import datetime
-from app.database.mongo import message_collection
 
-async def save_message(chat_id: str, user: str, text: str):
-    msg = {
+async def save_message(chat_id, user, message):
+    await messages_collection.insert_one({
         "chat_id": chat_id,
-        "sender": user,
-        "message": text,
+        "user": user,
+        "message": message,
         "timestamp": datetime.utcnow()
-    }
-    await message_collection.insert_one(msg)
-    return msg
+    })
+
+
+async def get_chat_history(chat_id):
+    cursor = messages_collection.find(
+        {"chat_id": chat_id}
+    ).sort("timestamp", 1)
+
+    messages = await cursor.to_list(length=1000)
+    return messages
