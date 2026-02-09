@@ -4,8 +4,8 @@ Whisper is a real-time chat app inspired by the simplicity and feel of WhatsApp.
 
 Messages are stored in MongoDB, so when a user joins, they can see the full chat history. The app also shows who is online, when someone is typing, and delivers a smooth, full-screen chat experience through a clean React interface.
 
-This project demonstrates how modern real-time applications can be built using asynchronous communication on the backend and an interactive frontend, creating a fast, responsive, and user-friendly chat system.
----
+**This project demonstrates how modern real-time applications can be built using asynchronous communication on the backend and an interactive frontend, creating a fast, responsive, and user-friendly chat system.
+**---
 
 ## ✅ Features
 
